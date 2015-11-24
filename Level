@@ -1,0 +1,32 @@
+/**
+ * Simple getter and setter class for the stats window.
+ * @author Jimmy Silva
+ *
+ */
+public class Level extends PlayScreen {
+	
+	private static int level;
+	/**
+	 * level is initialized at a default level of 1.
+	 * @param w is the super variable in order to push the level value from this subclass to the game window.
+	 */
+	public Level(GameWindow w) {
+		super(w);
+		level=1;
+	}
+
+	/**
+	 * @return the level
+	 */
+	public static int getLevel() {
+		return level;
+	}
+
+	/**
+	 * @param level the level to set
+	 */
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+}
