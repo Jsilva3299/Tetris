@@ -1,0 +1,37 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.Rectangle;
+
+/**
+ * Simple getter and setter class for the stats window.
+ * @author Jimmy Silva
+ *
+ */
+public class Score extends StatsWindow{
+	
+	private static int score;
+	/**
+	 * 	
+	 * @param w passes the score variable up to the game window to be updated during gameplay.
+	 */
+	public Score(GameWindow w) {
+		super(w);
+		this.score=0;	
+	}
+	/**
+	 * gets the current score for updates in the stats window.
+	 * @return
+	 */
+	public static int getScore(){
+		return score;
+	}
+	/**
+	 * sets the current score when this function is called upon.
+	 * @param score
+	 */
+	public void setScore(int score){
+		this.score=score;	
+	}
+}
